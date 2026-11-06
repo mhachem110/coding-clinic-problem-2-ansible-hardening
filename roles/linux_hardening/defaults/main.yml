@@ -1,0 +1,6 @@
+---
+ssh_service_name: "{{ 'sshd' if ansible_facts.os_family == 'RedHat' else 'ssh' }}"
+ssh_config_path: /etc/ssh/sshd_config.d/99-clinic-hardening.conf
+enable_unattended_upgrades: true
+fail2ban_service_name: fail2ban
+
