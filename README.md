@@ -6,6 +6,8 @@ The playbook applies a small hardening baseline to Ubuntu or RHEL hosts: it disa
 
 The role is safe to review without a server. The structure test checks that the important controls are present. Use Ansible check mode against a real inventory when you are ready to review a host without changing it.
 
+See [`DESIGN.md`](DESIGN.md) for the role flow and rollout safeguards.
+
 ## Files
 
 - `site.yml`: entry point that applies the role to the `linux` group.
